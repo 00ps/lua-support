@@ -64,7 +64,7 @@ else
 	"
 	let	s:Lua_Interpreter	='lua'
 	let	s:Lua_Compiler		='luac'
-	let s:plugin_dir			= $HOME.'/.vim/'
+  let s:plugin_dir      = expand('<sfile>:p:h:h')
 	let s:home_dir	  		= $HOME.'/'
   let s:escfilename 		= ' \%#[]'
 	"
@@ -98,7 +98,7 @@ let s:Lua_XtermDefaults  = "-fa courier -fs 12 -geometry 80x24"
 let	s:Lua_LineEndCommColDefault	= 49
 "  
 "   ----- Lua template files ----------------------------------------------
-let s:Lua_Template_Directory    = s:plugin_dir."lua-support/templates/"
+let s:Lua_Template_Directory    = s:plugin_dir."/lua-support/templates/"
 "
 let s:Lua_Template_Lua_File     = "lua-file-header"
 let s:Lua_Template_Frame        = "lua-frame"
